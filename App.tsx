@@ -239,12 +239,7 @@ const App: React.FC = () => {
 
         {report && !isLoading && (
           <div className="animate-fade-in">
-            <ReportDisplay report={report} />
-            <div className="mt-8 text-center">
-              <button onClick={handleReset} className="inline-flex items-center justify-center bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-blue-700 transition-all transform hover:scale-105">
-                  Analizar Otro Accidente
-              </button>
-            </div>
+            <ReportDisplay report={report} onReset={handleReset} />
           </div>
         )}
         {isCameraOpen && <CameraModal onClose={() => setIsCameraOpen(false)} onPhotoCapture={(file) => handleAddPhotos([file])} />}
