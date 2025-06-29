@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Generador de Informes de Accidentes",
+  "description": "Una aplicación que utiliza IA para analizar fotos de accidentes automovilísticos y generar un informe detallado sobre los daños, la causa probable y más.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
